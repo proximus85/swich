@@ -1,8 +1,8 @@
-public class Movie {
+public abstract class Movie {
 
-    public static final int  CHILDRENS = 2;
-    public static final int  REGULAR = 0;
-    public static final int  NEW_RELEASE = 1;
+    public static final int CHILDRENS = 2;
+    public static final int REGULAR = 0;
+    public static final int NEW_RELEASE = 1;
 
     private String _title;
     private int _priceCode;
@@ -12,6 +12,8 @@ public class Movie {
         _priceCode = priceCode;
     }
 
+    abstract double getTotalAmount(Rental rental, double totalAmount);
+
     public int getPriceCode() {
         return _priceCode;
     }
@@ -20,7 +22,7 @@ public class Movie {
         _priceCode = arg;
     }
 
-    public String getTitle (){
+    public String getTitle() {
         return _title;
-    };
+    }
 }
