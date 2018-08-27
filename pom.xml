@@ -6,7 +6,12 @@
 
     <groupId>org</groupId>
     <artifactId>refactoring.samples</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>statepattern</module>
+        <module>movierental</module>
+    </modules>
 
     <dependencies>
         <dependency>

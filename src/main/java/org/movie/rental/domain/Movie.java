@@ -1,3 +1,5 @@
+package org.movie.rental.domain;
+
 public abstract class Movie {
 
     public static final int CHILDRENS = 2;
@@ -12,7 +14,7 @@ public abstract class Movie {
         _priceCode = priceCode;
     }
 
-    abstract double getTotalAmount(Rental rental, double totalAmount);
+    public abstract double getTotalAmount(Rental rental, double totalAmount);
 
     public int getPriceCode() {
         return _priceCode;

@@ -1,3 +1,7 @@
+package org.movie.rental.domain;
+
+import org.movie.rental.domain.Movie;
+
 public class Rental {
 
     private Movie _Customer_movie;

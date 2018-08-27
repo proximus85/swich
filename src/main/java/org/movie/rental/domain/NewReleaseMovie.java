@@ -1,3 +1,5 @@
+package org.movie.rental.domain;
+
 public class NewReleaseMovie extends Movie {
 
     public NewReleaseMovie(String title, int priceCode) {
@@ -5,7 +7,7 @@ public class NewReleaseMovie extends Movie {
     }
 
     @Override
-    double getTotalAmount(Rental rental, double totalAmount) {
+    public double getTotalAmount(Rental rental, double totalAmount) {
         totalAmount += rental.getDaysRented() * 3;
         return totalAmount;
     }

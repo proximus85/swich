@@ -1,3 +1,7 @@
+package org.movie.rental;
+
+import org.movie.rental.domain.*;
+
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Vector;
