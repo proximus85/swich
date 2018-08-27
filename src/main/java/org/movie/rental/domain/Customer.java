@@ -1,7 +1,9 @@
+package org.movie.rental.domain;
+
 import java.util.Enumeration;
 import java.util.Vector;
 
-class Customer {
+public class Customer {
     private String _name;
     private Vector _rentals = new Vector();
 
@@ -21,7 +23,7 @@ class Customer {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
         Enumeration rentals = _rentals.elements();
-        String result = "Rental Record for " + getName() + "\n";
+        String result = "org.movie.rental.domain.Rental Record for " + getName() + "\n";
         while (rentals.hasMoreElements()) {
             double thisAmount = 0;
             Rental each = (Rental) rentals.nextElement();
