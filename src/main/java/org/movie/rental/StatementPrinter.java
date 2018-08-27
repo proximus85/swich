@@ -22,9 +22,9 @@ public class StatementPrinter {
     }
 
     private static Collection<Movie> createMovies() {
-        Movie movieOne = new NewReleaseMovie("Terminator", Movie.NEW_RELEASE);
-        Movie movieTwo = new ChildrenMovie("Chip and Dale", Movie.CHILDRENS);
-        Movie movieThree = new RegularMovie("Tango and Cash", Movie.REGULAR);
+        Movie movieOne = new NewReleaseMovie("Terminator");
+        Movie movieTwo = new ChildrenMovie("Chip and Dale");
+        Movie movieThree = new RegularMovie("Tango and Cash");
         return Arrays.asList(movieOne, movieTwo, movieThree);
     }
 

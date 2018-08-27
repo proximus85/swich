@@ -44,7 +44,7 @@ public class Customer {
         int frequentRenterPoints = 0;
         while (rentals.hasMoreElements()) {
             Rental rental = (Rental) rentals.nextElement();
-            if ((rental.getMovie().getPriceCode() == Movie.NEW_RELEASE) && rental.getDaysRented() > 1) {
+            if ((rental.getMovie() instanceof NewReleaseMovie) && rental.getDaysRented() > 1) {
                 frequentRenterPoints++;
             }
             frequentRenterPoints++;

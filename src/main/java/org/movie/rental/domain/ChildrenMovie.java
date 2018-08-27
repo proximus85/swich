@@ -2,8 +2,8 @@ package org.movie.rental.domain;
 
 public class ChildrenMovie extends Movie {
 
-    public ChildrenMovie(String title, int priceCode) {
-        super(title, priceCode);
+    public ChildrenMovie(String title) {
+        super(title);
     }
 
     @Override
