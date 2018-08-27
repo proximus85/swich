@@ -27,6 +27,8 @@ public class StatementPrinter {
         Movie movieOne = new Movie("Terminator", Movie.NEW_RELEASE);
         Movie movieTwo = new Movie("Chip and Dale", Movie.CHILDRENS);
         Movie movieThree = new Movie("Tango and Cash", Movie.REGULAR);
+
+        movieOne.setPriceCode(Movie.CHILDRENS  );
         return Arrays.asList(movieOne, movieTwo, movieThree);
     }
 
