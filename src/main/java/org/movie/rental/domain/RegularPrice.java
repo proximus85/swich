@@ -8,10 +8,10 @@ public class RegularPrice extends Price {
 
     @Override
     double getCharge(int daysRented) {
-        int thisAmount = 0;
-        thisAmount += 2;
-        if (daysRented > 2)
-            thisAmount += (daysRented - 2) * 1.5;
-        return thisAmount;
+        if (daysRented > 2) {
+            return (daysRented - 2) * 1.5 + 2;
+        } else {
+            return daysRented + 2;
+        }
     }
 }

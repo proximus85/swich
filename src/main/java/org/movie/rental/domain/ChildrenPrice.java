@@ -9,10 +9,10 @@ public class ChildrenPrice extends Price {
 
     @Override
     double getCharge(int daysRented) {
-        int thisAmount = 0;
-        thisAmount += 1.5;
-        if (daysRented > 3)
-            thisAmount += (daysRented - 3) * 1.5;
-        return thisAmount;
+        if (daysRented > 3) {
+            return (daysRented - 3) * 1.5 + 1.5;
+        } else {
+            return daysRented + 1.5;
+        }
     }
 }

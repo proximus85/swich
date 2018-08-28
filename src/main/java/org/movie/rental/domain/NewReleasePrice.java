@@ -8,9 +8,7 @@ public class NewReleasePrice extends Price {
 
     @Override
     double getCharge(int daysRented) {
-        int thisAmount = 0;
-        thisAmount += daysRented * 3;
-        return thisAmount;
+        return daysRented * 3;
     }
 
     public int getFrequentRentalPoints(int daysRented) {
